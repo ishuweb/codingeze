@@ -1,0 +1,473 @@
+* {
+padding: 0px;
+margin: 0px;
+}
+
+html {
+font-size: 1px;
+}
+
+body {
+scroll-behavior: smooth;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+  
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #a7a7a7; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+body:-webkit-scrollbar-thumb:hover {
+  background: #8b8b8b; 
+}
+
+
+
+/* ===================== MOBILE SECTION ADJUSTMENT ================= */
+.mobile_nav_wrapper {
+display: none;
+}
+
+
+/* ====================================================================== */
+/* ========================== LOADING SECTION =========================== */
+/* ====================================================================== */
+
+/* ---- DISPLAY CONTROL ------- */
+.loading_mbox {
+display: flex;
+width: 100%;
+height: 100vh;
+justify-content: center;
+align-items: center;
+background-color: white;
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 10000;
+}
+
+.loading_icon {
+width: 100px;
+}
+
+
+
+
+
+/* ========= MAIN BOX =========== */
+.mainbox {
+width: 100%;
+height: auto;
+}
+
+
+/* ========= HEADING BOX ========== */
+.headbox {
+width: 100%;
+height: 600px;
+background-image: linear-gradient(90deg, #3b3a3a 10%, #000000 70%);
+border-bottom: 2px #151210 solid;
+}
+
+.headbox_img {
+position: absolute;
+width: 100%;
+height: 600px;
+opacity: 25%;
+}
+
+
+/* LOGO BOX */
+.logobox {
+position: absolute;
+width: 100%;
+height: 50px;
+margin-top: 50px;
+display: flex;
+justify-content: center;
+
+}
+
+/* LOGO IMAGE */
+.logoimg {
+width: 50px;
+height: 50px;
+}
+
+/* LOGO TEXT */
+.logotxt {
+font-size: 35px;
+text-shadow: 2px 2px 3px rgb(138, 76, 0);
+color: orange;
+font-family: 'Poppins', sans-serif;
+}
+
+/* ======== HEADING - LEFT BOX ========= */
+.headbox_left {
+float: left;
+width: 55%;
+height: 400px;
+margin-top: 150px;
+overflow: hidden
+}
+
+.headbox_scrol_wraper {
+width: 100%;
+height: 2000px;
+} 
+
+.each-hbl {
+width: 100%;
+height: 400px;
+box-sizing: border-box;
+}
+
+.hbl_m_xt {
+font-size: 50rem;
+font-weight: 600;
+color: rgb(255, 255, 255);
+font-family: 'Poppins', sans-serif;
+padding-left: 50px;
+width: 90%;
+padding-bottom: 20px;
+}
+
+.hbl_stxt {
+font-size: 20rem;
+font-weight: 600;
+color: rgb(255, 255, 255);
+font-family: 'Nunito', sans-serif; 
+padding-left: 50px;
+width: 70%;
+text-align: justify;
+line-height: 30px;
+}
+
+.hbl_btnbox {
+width: 100%;
+height: 50px;
+margin-top: 40px;
+display: flex;
+}
+
+.hbl_btn {
+border-radius: 35px;
+margin-left: 50px;
+appearance: button;
+background-color: #1899D6;
+border: solid transparent;
+border-radius: 16px;
+border-width: 0 0 4px;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+font-family: 'Poppins', sans-serif;
+font-size: 15px;
+font-weight: 700;
+letter-spacing: .8px;
+line-height: 20px;
+outline: none;
+overflow: visible;
+padding-left: 30px;
+padding-right: 30px;
+text-align: center;
+text-transform: uppercase;
+touch-action: manipulation;
+transform: translateZ(0);
+transition: filter .2s;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+width: auto;
+}
+.hbl_btn:after {
+background-clip: padding-box;
+background-color: #1CB0F6;
+border: solid transparent;
+border-radius: 16px;
+border-width: 0 0 4px;
+bottom: -4px;
+content: "";
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+z-index: -1;
+}
+.hbl_btn:main,
+.hbl_btn:focus {
+  user-select: auto;
+}
+.hbl_btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+.hbl_btn:disabled {
+  cursor: auto;
+}
+
+
+.headbox_rightbox {
+float: right;
+width: 45%;
+height: 600px;
+box-sizing: border-box;
+}
+
+.hbr_rotor_container {
+float: right;
+width: 600px;
+height: 600px;
+overflow: hidden;
+position: relative;
+}
+
+.rotor_1 {
+width: 750px;
+height: 750px;
+border-radius: 50%;
+position: absolute;
+}
+
+/* CSS  */
+.rotor_img1 {
+width: 40px;
+height: 40px;
+position: absolute;
+margin-top: 150px;
+margin-left: 50px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* C  */
+.rotor_img2 {
+width: 40px;
+height: 45px;
+position: absolute;
+margin-top: 270px;
+margin-left: 60px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* NODE  */
+.rotor_img3 {
+width: 70px;
+/* height: 70px; */
+position: absolute;
+margin-top: 400px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* PHP  */
+.rotor_img4 {
+width: 60px;
+/* height: 70px; */
+position: absolute;
+margin-top: 520px;
+margin-left: 80px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* HTML  */
+.rotor_img5 {
+width: 40px;
+/* height: 70px; */
+position: absolute;
+margin-top: 530px;
+margin-left: 350px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* JAVASCRIPT  */
+.rotor_img6 {
+width: 40px;
+height: 40px;
+position: absolute;
+margin-top: 490px;
+margin-left: 530px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* MYSQL  */
+.rotor_img7 {
+width: 70px;
+height: 70px;
+position: absolute;
+margin-top: 320px;
+margin-left: 600px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* SQL  */
+.rotor_img8 {
+width: 50px;
+height: 50px;
+position: absolute;
+margin-top: 200px;
+margin-left: 500px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* JAVA  */
+.rotor_img9 {
+width: 40px;
+/* height: 40px; */
+position: absolute;
+margin-top: 80px;
+margin-left: 450px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* JQUERY  */
+.rotor_img10 {
+width: 50px;
+height: 50px;
+position: absolute;
+margin-top: 40px;
+margin-left: 210px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* GOLANG  */
+.rotor_img11 {
+width: 40px;
+height: 50px;
+position: absolute;
+margin-top: 180px;
+margin-left: 180px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* KOTLIN  */
+.rotor_img12 {
+width: 50px;
+/* height: 50px; */
+position: absolute;
+margin-top: 400px;
+margin-left: 150px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* C++  */
+.rotor_img13 {
+width: 40px;
+height: 45px;
+position: absolute;
+margin-top: 400px;
+margin-left: 310px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* C#  */
+.rotor_img14 {
+width: 40px;
+height: 40px;
+position: absolute;
+margin-top: 460px;
+margin-left: 420px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* VUEJS  */
+.rotor_img15 {
+width: 50px;
+height: 50px;
+position: absolute;
+margin-top: 150px;
+margin-left: 310px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* ASP.NET  */
+.rotor_img16 {
+width: 40px;
+height: 40px;
+position: absolute;
+margin-top: 350px;
+margin-left: 390px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* DOT NET  */
+.rotor_img17 {
+width: 40px;
+height: 40px;
+position: absolute;
+margin-top: 340px;
+margin-left: 510px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* PYTHON  */
+.rotor_img18 {
+width: 50px;
+height: 50px;
+position: absolute;
+margin-top: 500px;
+margin-left: 210px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* BOOTSTRAP  */
+.rotor_img19 {
+width: 40px;
+height: 40px;
+position: absolute;
+margin-top: 40px;
+margin-left: 340px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* NPM  */
+.rotor_img20 {
+width: 50px;
+height: 50px;
+position: absolute;
+margin-top: 250px;
+margin-left: 360px;
+transition-duration: 0.5s;
+transform: scale(50%);
+}
+
+/* MONGODB  */
+.rotor_img21 {
+width: 40px;
+/* height: 30px; */
+position: absolute;
+margin-top: 300px;
+margin-left: 220px;
+transition-duration: 0.5s;
+transform: scale(50%); 
+}
